@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417187CA50345FC6C45653D6 /* Pods_ChakaChallegeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6772EDE997862FCDAF123D2E /* Pods_ChakaChallegeTests.framework */; };
+		70B31F55266114AE008AD759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F54266114AE008AD759 /* AppDelegate.swift */; };
+		70B31F57266114AE008AD759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F56266114AE008AD759 /* SceneDelegate.swift */; };
+		70B31F5E266114B2008AD759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B31F5D266114B2008AD759 /* Assets.xcassets */; };
+		70B31F61266114B2008AD759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B31F5F266114B2008AD759 /* LaunchScreen.storyboard */; };
+		70B31F6C266114B3008AD759 /* ChakaChallegeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F6B266114B3008AD759 /* ChakaChallegeTests.swift */; };
+		70B31F77266114B3008AD759 /* ChakaChallegeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F76266114B3008AD759 /* ChakaChallegeUITests.swift */; };
+		70B31F862662534B008AD759 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F852662534B008AD759 /* DetailsViewController.swift */; };
+		70B31F88266287A3008AD759 /* STockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F87266287A3008AD759 /* STockTableViewController.swift */; };
+		70B31F8A2662A6E4008AD759 /* stocksCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F892662A6E4008AD759 /* stocksCustomCell.swift */; };
+		70B31F8C2663A473008AD759 /* StockListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F8B2663A472008AD759 /* StockListModel.swift */; };
+		977A56277ABB8298BBF0A160 /* Pods_ChakaChallege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE5603AEE37671503ABA535 /* Pods_ChakaChallege.framework */; };
+		FB83B2D2A00B1066FC163525 /* Pods_ChakaChallege_ChakaChallegeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCED168337A9A8BF4A5927 /* Pods_ChakaChallege_ChakaChallegeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70B31F68266114B3008AD759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70B31F49266114AE008AD759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70B31F50266114AE008AD759;
+			remoteInfo = ChakaChallege;
+		};
+		70B31F73266114B3008AD759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70B31F49266114AE008AD759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70B31F50266114AE008AD759;
+			remoteInfo = ChakaChallege;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39B7DA2773B59443F3A074BC /* Pods-ChakaChallege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChakaChallege.debug.xcconfig"; path = "Target Support Files/Pods-ChakaChallege/Pods-ChakaChallege.debug.xcconfig"; sourceTree = "<group>"; };
+		6057B7CC1F392F79C3A3500C /* Pods-ChakaChallegeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChakaChallegeTests.release.xcconfig"; path = "Target Support Files/Pods-ChakaChallegeTests/Pods-ChakaChallegeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6772EDE997862FCDAF123D2E /* Pods_ChakaChallegeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChakaChallegeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B31F51266114AE008AD759 /* ChakaChallege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChakaChallege.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B31F54266114AE008AD759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70B31F56266114AE008AD759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70B31F5D266114B2008AD759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70B31F60266114B2008AD759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70B31F62266114B2008AD759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B31F67266114B3008AD759 /* ChakaChallegeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChakaChallegeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B31F6B266114B3008AD759 /* ChakaChallegeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChakaChallegeTests.swift; sourceTree = "<group>"; };
+		70B31F6D266114B3008AD759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B31F72266114B3008AD759 /* ChakaChallegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChakaChallegeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B31F76266114B3008AD759 /* ChakaChallegeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChakaChallegeUITests.swift; sourceTree = "<group>"; };
+		70B31F78266114B3008AD759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B31F852662534B008AD759 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		70B31F87266287A3008AD759 /* STockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STockTableViewController.swift; sourceTree = "<group>"; };
+		70B31F892662A6E4008AD759 /* stocksCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stocksCustomCell.swift; sourceTree = "<group>"; };
+		70B31F8B2663A472008AD759 /* StockListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListModel.swift; sourceTree = "<group>"; };
+		9244FD8B91CC41101E85CAFB /* Pods-ChakaChallege-ChakaChallegeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChakaChallege-ChakaChallegeUITests.release.xcconfig"; path = "Target Support Files/Pods-ChakaChallege-ChakaChallegeUITests/Pods-ChakaChallege-ChakaChallegeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A55771AFA8E02F55FD427123 /* Pods-ChakaChallege-ChakaChallegeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChakaChallege-ChakaChallegeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChakaChallege-ChakaChallegeUITests/Pods-ChakaChallege-ChakaChallegeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9FCED168337A9A8BF4A5927 /* Pods_ChakaChallege_ChakaChallegeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChakaChallege_ChakaChallegeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E231B26030818CAC33A5CE /* Pods-ChakaChallegeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChakaChallegeTests.debug.xcconfig"; path = "Target Support Files/Pods-ChakaChallegeTests/Pods-ChakaChallegeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAE5603AEE37671503ABA535 /* Pods_ChakaChallege.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChakaChallege.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC2FCD32B0769D4297A9292 /* Pods-ChakaChallege.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChakaChallege.release.xcconfig"; path = "Target Support Files/Pods-ChakaChallege/Pods-ChakaChallege.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70B31F4E266114AE008AD759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977A56277ABB8298BBF0A160 /* Pods_ChakaChallege.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B31F64266114B3008AD759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417187CA50345FC6C45653D6 /* Pods_ChakaChallegeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B31F6F266114B3008AD759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB83B2D2A00B1066FC163525 /* Pods_ChakaChallege_ChakaChallegeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061D084EC8919EC2ACEA04DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39B7DA2773B59443F3A074BC /* Pods-ChakaChallege.debug.xcconfig */,
+				CBC2FCD32B0769D4297A9292 /* Pods-ChakaChallege.release.xcconfig */,
+				A55771AFA8E02F55FD427123 /* Pods-ChakaChallege-ChakaChallegeUITests.debug.xcconfig */,
+				9244FD8B91CC41101E85CAFB /* Pods-ChakaChallege-ChakaChallegeUITests.release.xcconfig */,
+				B5E231B26030818CAC33A5CE /* Pods-ChakaChallegeTests.debug.xcconfig */,
+				6057B7CC1F392F79C3A3500C /* Pods-ChakaChallegeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70B31F48266114AE008AD759 = {
+			isa = PBXGroup;
+			children = (
+				70B31F53266114AE008AD759 /* ChakaChallege */,
+				70B31F6A266114B3008AD759 /* ChakaChallegeTests */,
+				70B31F75266114B3008AD759 /* ChakaChallegeUITests */,
+				70B31F52266114AE008AD759 /* Products */,
+				061D084EC8919EC2ACEA04DF /* Pods */,
+				E62A754B1EEA4D01BDD394BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70B31F52266114AE008AD759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70B31F51266114AE008AD759 /* ChakaChallege.app */,
+				70B31F67266114B3008AD759 /* ChakaChallegeTests.xctest */,
+				70B31F72266114B3008AD759 /* ChakaChallegeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70B31F53266114AE008AD759 /* ChakaChallege */ = {
+			isa = PBXGroup;
+			children = (
+				70B31F8E2663AB71008AD759 /* ApiClient */,
+				70B31F8D2663A747008AD759 /* Models */,
+				70B31F8426625310008AD759 /* Scenes */,
+				70B31F54266114AE008AD759 /* AppDelegate.swift */,
+				70B31F56266114AE008AD759 /* SceneDelegate.swift */,
+				70B31F5D266114B2008AD759 /* Assets.xcassets */,
+				70B31F5F266114B2008AD759 /* LaunchScreen.storyboard */,
+				70B31F62266114B2008AD759 /* Info.plist */,
+			);
+			path = ChakaChallege;
+			sourceTree = "<group>";
+		};
+		70B31F6A266114B3008AD759 /* ChakaChallegeTests */ = {
+			isa = PBXGroup;
+			children = (
+				70B31F6B266114B3008AD759 /* ChakaChallegeTests.swift */,
+				70B31F6D266114B3008AD759 /* Info.plist */,
+			);
+			path = ChakaChallegeTests;
+			sourceTree = "<group>";
+		};
+		70B31F75266114B3008AD759 /* ChakaChallegeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70B31F76266114B3008AD759 /* ChakaChallegeUITests.swift */,
+				70B31F78266114B3008AD759 /* Info.plist */,
+			);
+			path = ChakaChallegeUITests;
+			sourceTree = "<group>";
+		};
+		70B31F8426625310008AD759 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				70B31F852662534B008AD759 /* DetailsViewController.swift */,
+				70B31F87266287A3008AD759 /* STockTableViewController.swift */,
+				70B31F892662A6E4008AD759 /* stocksCustomCell.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		70B31F8D2663A747008AD759 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70B31F8B2663A472008AD759 /* StockListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70B31F8E2663AB71008AD759 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		E62A754B1EEA4D01BDD394BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE5603AEE37671503ABA535 /* Pods_ChakaChallege.framework */,
+				A9FCED168337A9A8BF4A5927 /* Pods_ChakaChallege_ChakaChallegeUITests.framework */,
+				6772EDE997862FCDAF123D2E /* Pods_ChakaChallegeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70B31F50266114AE008AD759 /* ChakaChallege */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70B31F7B266114B3008AD759 /* Build configuration list for PBXNativeTarget "ChakaChallege" */;
+			buildPhases = (
+				0635512A83D57AB0A1A14356 /* [CP] Check Pods Manifest.lock */,
+				70B31F4D266114AE008AD759 /* Sources */,
+				70B31F4E266114AE008AD759 /* Frameworks */,
+				70B31F4F266114AE008AD759 /* Resources */,
+				85AE4D3B4A6A872C83964E34 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChakaChallege;
+			productName = ChakaChallege;
+			productReference = 70B31F51266114AE008AD759 /* ChakaChallege.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70B31F66266114B3008AD759 /* ChakaChallegeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70B31F7E266114B3008AD759 /* Build configuration list for PBXNativeTarget "ChakaChallegeTests" */;
+			buildPhases = (
+				EA238F18B65B9DEA00104A76 /* [CP] Check Pods Manifest.lock */,
+				70B31F63266114B3008AD759 /* Sources */,
+				70B31F64266114B3008AD759 /* Frameworks */,
+				70B31F65266114B3008AD759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70B31F69266114B3008AD759 /* PBXTargetDependency */,
+			);
+			name = ChakaChallegeTests;
+			productName = ChakaChallegeTests;
+			productReference = 70B31F67266114B3008AD759 /* ChakaChallegeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70B31F71266114B3008AD759 /* ChakaChallegeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70B31F81266114B3008AD759 /* Build configuration list for PBXNativeTarget "ChakaChallegeUITests" */;
+			buildPhases = (
+				0139DFF600C1D5367C439154 /* [CP] Check Pods Manifest.lock */,
+				70B31F6E266114B3008AD759 /* Sources */,
+				70B31F6F266114B3008AD759 /* Frameworks */,
+				70B31F70266114B3008AD759 /* Resources */,
+				40AF19637F1334E73C0D22CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70B31F74266114B3008AD759 /* PBXTargetDependency */,
+			);
+			name = ChakaChallegeUITests;
+			productName = ChakaChallegeUITests;
+			productReference = 70B31F72266114B3008AD759 /* ChakaChallegeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70B31F49266114AE008AD759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					70B31F50266114AE008AD759 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					70B31F66266114B3008AD759 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 70B31F50266114AE008AD759;
+					};
+					70B31F71266114B3008AD759 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 70B31F50266114AE008AD759;
+					};
+				};
+			};
+			buildConfigurationList = 70B31F4C266114AE008AD759 /* Build configuration list for PBXProject "ChakaChallege" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70B31F48266114AE008AD759;
+			productRefGroup = 70B31F52266114AE008AD759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70B31F50266114AE008AD759 /* ChakaChallege */,
+				70B31F66266114B3008AD759 /* ChakaChallegeTests */,
+				70B31F71266114B3008AD759 /* ChakaChallegeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70B31F4F266114AE008AD759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B31F61266114B2008AD759 /* LaunchScreen.storyboard in Resources */,
+				70B31F5E266114B2008AD759 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B31F65266114B3008AD759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B31F70266114B3008AD759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0139DFF600C1D5367C439154 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChakaChallege-ChakaChallegeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0635512A83D57AB0A1A14356 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChakaChallege-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40AF19637F1334E73C0D22CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChakaChallege-ChakaChallegeUITests/Pods-ChakaChallege-ChakaChallegeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChakaChallege-ChakaChallegeUITests/Pods-ChakaChallege-ChakaChallegeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChakaChallege-ChakaChallegeUITests/Pods-ChakaChallege-ChakaChallegeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85AE4D3B4A6A872C83964E34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChakaChallege/Pods-ChakaChallege-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChakaChallege/Pods-ChakaChallege-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChakaChallege/Pods-ChakaChallege-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA238F18B65B9DEA00104A76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChakaChallegeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70B31F4D266114AE008AD759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B31F8A2662A6E4008AD759 /* stocksCustomCell.swift in Sources */,
+				70B31F88266287A3008AD759 /* STockTableViewController.swift in Sources */,
+				70B31F8C2663A473008AD759 /* StockListModel.swift in Sources */,
+				70B31F55266114AE008AD759 /* AppDelegate.swift in Sources */,
+				70B31F57266114AE008AD759 /* SceneDelegate.swift in Sources */,
+				70B31F862662534B008AD759 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B31F63266114B3008AD759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B31F6C266114B3008AD759 /* ChakaChallegeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B31F6E266114B3008AD759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70B31F77266114B3008AD759 /* ChakaChallegeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70B31F69266114B3008AD759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70B31F50266114AE008AD759 /* ChakaChallege */;
+			targetProxy = 70B31F68266114B3008AD759 /* PBXContainerItemProxy */;
+		};
+		70B31F74266114B3008AD759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70B31F50266114AE008AD759 /* ChakaChallege */;
+			targetProxy = 70B31F73266114B3008AD759 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70B31F5F266114B2008AD759 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70B31F60266114B2008AD759 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70B31F79266114B3008AD759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70B31F7A266114B3008AD759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70B31F7C266114B3008AD759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B7DA2773B59443F3A074BC /* Pods-ChakaChallege.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A3CL8858X;
+				INFOPLIST_FILE = ChakaChallege/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakaNg.ChakaChallenge.ChakaChallege;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70B31F7D266114B3008AD759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC2FCD32B0769D4297A9292 /* Pods-ChakaChallege.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A3CL8858X;
+				INFOPLIST_FILE = ChakaChallege/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakaNg.ChakaChallenge.ChakaChallege;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70B31F7F266114B3008AD759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E231B26030818CAC33A5CE /* Pods-ChakaChallegeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A3CL8858X;
+				INFOPLIST_FILE = ChakaChallegeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakaNg.ChakaChallenge.ChakaChallegeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChakaChallege.app/ChakaChallege";
+			};
+			name = Debug;
+		};
+		70B31F80266114B3008AD759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6057B7CC1F392F79C3A3500C /* Pods-ChakaChallegeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A3CL8858X;
+				INFOPLIST_FILE = ChakaChallegeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakaNg.ChakaChallenge.ChakaChallegeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChakaChallege.app/ChakaChallege";
+			};
+			name = Release;
+		};
+		70B31F82266114B3008AD759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55771AFA8E02F55FD427123 /* Pods-ChakaChallege-ChakaChallegeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A3CL8858X;
+				INFOPLIST_FILE = ChakaChallegeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakaNg.ChakaChallenge.ChakaChallegeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChakaChallege;
+			};
+			name = Debug;
+		};
+		70B31F83266114B3008AD759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9244FD8B91CC41101E85CAFB /* Pods-ChakaChallege-ChakaChallegeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A3CL8858X;
+				INFOPLIST_FILE = ChakaChallegeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakaNg.ChakaChallenge.ChakaChallegeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChakaChallege;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70B31F4C266114AE008AD759 /* Build configuration list for PBXProject "ChakaChallege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B31F79266114B3008AD759 /* Debug */,
+				70B31F7A266114B3008AD759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70B31F7B266114B3008AD759 /* Build configuration list for PBXNativeTarget "ChakaChallege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B31F7C266114B3008AD759 /* Debug */,
+				70B31F7D266114B3008AD759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70B31F7E266114B3008AD759 /* Build configuration list for PBXNativeTarget "ChakaChallegeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B31F7F266114B3008AD759 /* Debug */,
+				70B31F80266114B3008AD759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70B31F81266114B3008AD759 /* Build configuration list for PBXNativeTarget "ChakaChallegeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70B31F82266114B3008AD759 /* Debug */,
+				70B31F83266114B3008AD759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70B31F49266114AE008AD759 /* Project object */;
+}

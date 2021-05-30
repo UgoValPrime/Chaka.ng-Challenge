@@ -1,0 +1,6 @@
+framework module Pods_ChakaChallegeTests {
+  umbrella header "Pods-ChakaChallegeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
