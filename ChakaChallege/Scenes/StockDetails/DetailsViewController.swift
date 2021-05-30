@@ -8,12 +8,32 @@
 import UIKit
 import SnapKit
 
-class DetailsViewController: UIViewController {
+protocol GetStockDetailsDisplayLogic {
+   func displayResponse(prompt: StockDetailsModel)
+   func displayError(prompt: String)
+}
+
+class DetailsViewController: UIViewController, GetStockDetailsDisplayLogic {
+    func displayResponse(prompt: StockDetailsModel) {
+        detailsData = prompt
+        priceLabel.text = "Open:: \(detailsData?.welcomeOpen ?? Int())    Close:: \(detailsData?.close ?? Double())"
+        print("details::>>>, \(prompt)")
+    }
+    
+    func displayError(prompt: String) {
+        print("ERROR:::\(prompt)")
+    }
+    
     
     var assetLogoView = UIImageView()
     var assetNamelabel = UILabel()
     var priceLabel = UILabel()
     var percentLabel = UILabel()
+    var detailsData: StockDetailsModel?
+    var interactor: GetStockDetailsResponseBusinessLogic?
+    var stockData: Ticker?
+
+    
     
     
     
@@ -25,8 +45,23 @@ class DetailsViewController: UIViewController {
         setupAssetNameLabel()
         setupPriceLabel()
         setupPercentLabel()
+        setUpDependencies()
+        interactor?.getStockDeatailsResponseData(ticker: stockData?.ticker ?? "AAPL")
     }
     
+    
+    func setUpDependencies() {
+       let interactor = GetStockDetailsInteractor()
+       let worker = StockDetailsResponseWorker()
+       let presenter = GetStockDetailsPresenter()
+       let networkClient = ChakaApiClient()
+       
+       interactor.worker = worker
+       interactor.presenter = presenter
+       worker.networkClient = networkClient
+       presenter.view = self
+       self.interactor = interactor
+    }
     
     func navigationBar() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarPosition.topAttached, barMetrics: UIBarMetrics.default)
@@ -51,21 +86,23 @@ class DetailsViewController: UIViewController {
      
     func setupAssetNameLabel() {
         view.addSubview(assetNamelabel)
-        assetNamelabel.text = "Etherium"
+        assetNamelabel.text = stockData?.name
         assetNamelabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         assetNamelabel.textAlignment = .center
         assetNamelabel.textColor = .white
+        assetNamelabel.numberOfLines = 0
+        assetNamelabel.lineBreakMode = .byWordWrapping
         assetNamelabel.snp.makeConstraints { (make) in
             make.top.equalTo(assetLogoView.snp.bottom).offset(20)
             make.centerX.equalTo(view)
-            make.width.equalTo(90)
-            make.height.equalTo(30)
+            make.width.equalTo(view.snp.width)
+//            make.height.equalTo(30)
         }
     }
     
     func setupPriceLabel() {
         view.addSubview(priceLabel)
-        priceLabel.text = "$2760"
+       
         priceLabel.font = UIFont.systemFont(ofSize: 14, weight: .light)
         priceLabel.textAlignment = .center
         priceLabel.textColor = .lightGray

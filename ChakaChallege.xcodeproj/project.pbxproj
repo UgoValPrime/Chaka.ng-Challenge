@@ -12,6 +12,11 @@
 		702E4FD12663C49800241908 /* StocksListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FD02663C49800241908 /* StocksListWorker.swift */; };
 		702E4FD32663C4B100241908 /* StockListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FD22663C4B100241908 /* StockListInteractor.swift */; };
 		702E4FD52663C4E700241908 /* StockListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FD42663C4E700241908 /* StockListPresenter.swift */; };
+		702E4FD926641BEC00241908 /* DetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FD826641BEC00241908 /* DetailsWorker.swift */; };
+		702E4FDB26641C4000241908 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FDA26641C4000241908 /* DetailsInteractor.swift */; };
+		702E4FDD26641C5D00241908 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FDC26641C5D00241908 /* DetailsPresenter.swift */; };
+		702E4FDF26641C8500241908 /* StockDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FDE26641C8500241908 /* StockDetailsModel.swift */; };
+		702E4FE1266435FB00241908 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FE0266435FB00241908 /* Constants.swift */; };
 		70B31F55266114AE008AD759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F54266114AE008AD759 /* AppDelegate.swift */; };
 		70B31F57266114AE008AD759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F56266114AE008AD759 /* SceneDelegate.swift */; };
 		70B31F5E266114B2008AD759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B31F5D266114B2008AD759 /* Assets.xcassets */; };
@@ -51,6 +56,11 @@
 		702E4FD02663C49800241908 /* StocksListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListWorker.swift; sourceTree = "<group>"; };
 		702E4FD22663C4B100241908 /* StockListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListInteractor.swift; sourceTree = "<group>"; };
 		702E4FD42663C4E700241908 /* StockListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListPresenter.swift; sourceTree = "<group>"; };
+		702E4FD826641BEC00241908 /* DetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsWorker.swift; sourceTree = "<group>"; };
+		702E4FDA26641C4000241908 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		702E4FDC26641C5D00241908 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		702E4FDE26641C8500241908 /* StockDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsModel.swift; sourceTree = "<group>"; };
+		702E4FE0266435FB00241908 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70B31F51266114AE008AD759 /* ChakaChallege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChakaChallege.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B31F54266114AE008AD759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70B31F56266114AE008AD759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				70B31F852662534B008AD759 /* DetailsViewController.swift */,
+				702E4FD826641BEC00241908 /* DetailsWorker.swift */,
+				702E4FDA26641C4000241908 /* DetailsInteractor.swift */,
+				702E4FDC26641C5D00241908 /* DetailsPresenter.swift */,
 			);
 			path = StockDetails;
 			sourceTree = "<group>";
@@ -169,6 +182,7 @@
 				70B31F5D266114B2008AD759 /* Assets.xcassets */,
 				70B31F5F266114B2008AD759 /* LaunchScreen.storyboard */,
 				70B31F62266114B2008AD759 /* Info.plist */,
+				702E4FE0266435FB00241908 /* Constants.swift */,
 			);
 			path = ChakaChallege;
 			sourceTree = "<group>";
@@ -204,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				70B31F8B2663A472008AD759 /* StockListModel.swift */,
+				702E4FDE26641C8500241908 /* StockDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -466,10 +481,15 @@
 				70B31F8A2662A6E4008AD759 /* stocksCustomCell.swift in Sources */,
 				70B31F88266287A3008AD759 /* STockTableViewController.swift in Sources */,
 				70B31F8C2663A473008AD759 /* StockListModel.swift in Sources */,
+				702E4FDF26641C8500241908 /* StockDetailsModel.swift in Sources */,
 				70B31F55266114AE008AD759 /* AppDelegate.swift in Sources */,
+				702E4FE1266435FB00241908 /* Constants.swift in Sources */,
 				702E4FCF2663C3FD00241908 /* ChakaApiClient.swift in Sources */,
+				702E4FD926641BEC00241908 /* DetailsWorker.swift in Sources */,
 				70B31F57266114AE008AD759 /* SceneDelegate.swift in Sources */,
+				702E4FDB26641C4000241908 /* DetailsInteractor.swift in Sources */,
 				702E4FD32663C4B100241908 /* StockListInteractor.swift in Sources */,
+				702E4FDD26641C5D00241908 /* DetailsPresenter.swift in Sources */,
 				702E4FD12663C49800241908 /* StocksListWorker.swift in Sources */,
 				70B31F862662534B008AD759 /* DetailsViewController.swift in Sources */,
 				702E4FD52663C4E700241908 /* StockListPresenter.swift in Sources */,

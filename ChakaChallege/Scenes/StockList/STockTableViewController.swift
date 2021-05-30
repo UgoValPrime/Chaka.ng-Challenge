@@ -44,14 +44,18 @@ class STockTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = DetailsViewController()
+        let data = dataResponse?[indexPath.row]
+        viewController.stockData = data
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
     
     
     var tableview = UITableView()
     var interactor: GetStockResponseBusinessLogic?
     var dataResponse: [Ticker]?
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0.4, alpha: 0.4)
@@ -73,6 +77,8 @@ class STockTableViewController: UIViewController, UITableViewDelegate, UITableVi
        worker.networkClient = networkClient
        presenter.view = self
        self.interactor = interactor
+        
+        
     }
     
     func navigationBar() {

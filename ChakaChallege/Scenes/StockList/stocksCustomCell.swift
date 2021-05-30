@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 
 class StocksCustomCell: UITableViewCell {
@@ -13,7 +14,13 @@ class StocksCustomCell: UITableViewCell {
     var data: Ticker? {
        didSet {
           guard let data = data else { return }
-//        logoImage.image = UIImage(named: data.image)
+   
+            do
+              {
+                let url = URL(string: "https://s3.polygon.io/logos/\(data.ticker.lowercased())/logo.png")
+                self.logoImage.kf.setImage(with: url)
+              }
+        
         stockName.text = data.name
         stockSymbol.text = data.ticker
             percentDifference.text = "ꜛ300"
@@ -74,11 +81,13 @@ func setupExerciseImageView() {
     logoImage = UIImageView()
     cellView.addSubview(logoImage)
     logoImage.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.15)
-    logoImage.layer.cornerRadius = 25
+    logoImage.layer.cornerRadius = 30
+    logoImage.contentMode = .scaleAspectFit
+    logoImage.clipsToBounds = true
     logoImage.snp.makeConstraints { (make) in
         make.centerY.equalTo(cellView)
         make.left.equalTo(cellView.snp.left).offset(20)
-        make.height.width.equalTo(50)
+        make.height.width.equalTo(60)
         
     }
 }

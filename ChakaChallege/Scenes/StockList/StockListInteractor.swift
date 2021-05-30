@@ -17,7 +17,7 @@ class GetStockListInteractor: GetStockResponseBusinessLogic {
     var presenter: GetStockListPresentationLogic?
     
     func getStockResponseData() {
-        worker?.getStocks(url: <#String#>, success: { [weak self] (response) in
+        worker?.getStocks(success: { [weak self] (response) in
             guard let strongSelf = self else { return }
             strongSelf.presenter?.presentResponse(prompt: response)
             
