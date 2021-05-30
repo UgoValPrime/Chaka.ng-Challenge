@@ -7,9 +7,28 @@
 
 import UIKit
 
-class STockTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+protocol GetStockListDisplayLogic {
+   func displayResponse(prompt: StockResponse)
+   func displayError(prompt: String)
+}
+
+
+class STockTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GetStockListDisplayLogic {
+    func displayResponse(prompt: StockResponse) {
+        dataResponse = prompt.tickers
+        tableview.reloadData()
+        print("DATARESPONSE:::\(String(describing: dataResponse))")
+    }
+    
+    func displayError(prompt: String) {
+        print("ERROR:::\(prompt)")
+    }
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        30
+        dataResponse?.count ?? Int()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -18,7 +37,8 @@ class STockTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StocksCustomCell
-
+        let current  = dataResponse?[indexPath.row]
+        cell.data = current
         return cell
     }
     
@@ -29,13 +49,30 @@ class STockTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     var tableview = UITableView()
+    var interactor: GetStockResponseBusinessLogic?
+    var dataResponse: [Ticker]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0.4, alpha: 0.4)
         setupTableView()
         navigationBar()
+        setUpDependencies()
+        interactor?.getStockResponseData()
        
+    }
+    
+    func setUpDependencies() {
+       let interactor = GetStockListInteractor()
+       let worker = StockResponseWorker()
+       let presenter = GetStockListPresenter()
+       let networkClient = ChakaApiClient()
+       
+       interactor.worker = worker
+       interactor.presenter = presenter
+       worker.networkClient = networkClient
+       presenter.view = self
+       self.interactor = interactor
     }
     
     func navigationBar() {
