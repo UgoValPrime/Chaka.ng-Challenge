@@ -16,7 +16,20 @@ protocol GetStockDetailsDisplayLogic {
 class DetailsViewController: UIViewController, GetStockDetailsDisplayLogic {
     func displayResponse(prompt: StockDetailsModel) {
         detailsData = prompt
-        priceLabel.text = "Open:: \(detailsData?.welcomeOpen ?? Int())    Close:: \(detailsData?.close ?? Double())"
+        priceLabel.text = "Open:: \(detailsData?.welcomeOpen ?? Double())    Close:: \(detailsData?.close ?? Double())"
+        let  percent = "\(PercentageChange().percentChange(open: detailsData?.welcomeOpen ?? Double(), close: detailsData?.close ?? Double()))".prefix(5)
+        if percent.prefix(1) == "-"{
+            percentLabel.textColor = .red
+            percentLabel.text = "ꜜ\(percent)%"
+        }else if percent.prefix(5) == "-nan" || percent.prefix(5) == "-0.00" || percentLabel.text == "-0.00%"{
+            percentLabel.textColor = .white
+            percentLabel.text = "0.00%"
+        }else{
+            percentLabel.textColor = .green
+            percentLabel.text = "ꜛ\(percent)%"
+        }
+        let url = URL(string: "https://s3.polygon.io/logos/\(stockData?.ticker.lowercased() ?? String())/logo.png")
+        self.assetLogoView.kf.setImage(with: url)
         print("details::>>>, \(prompt)")
     }
     
@@ -46,7 +59,9 @@ class DetailsViewController: UIViewController, GetStockDetailsDisplayLogic {
         setupPriceLabel()
         setupPercentLabel()
         setUpDependencies()
-        interactor?.getStockDeatailsResponseData(ticker: stockData?.ticker ?? "AAPL")
+        if let unwrappedTickerValue = stockData?.ticker {
+            interactor?.getStockDeatailsResponseData(url: "https://api.polygon.io/v1/open-close/\(unwrappedTickerValue.uppercased())/2020-10-14?unadjusted=true&apiKey=bUy3ML7tgpRaXC96KVFPC8O2gjU6Als2" )
+        }
     }
     
     
@@ -73,7 +88,7 @@ class DetailsViewController: UIViewController, GetStockDetailsDisplayLogic {
     func setupAssetLogoView() {
         view.addSubview(assetLogoView)
         assetLogoView.layer.cornerRadius = 40
-        assetLogoView.contentMode = .center
+        assetLogoView.contentMode = .scaleAspectFit
         assetLogoView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.2)
         assetLogoView.clipsToBounds = true
         assetLogoView.snp.makeConstraints { (make) in

@@ -16,7 +16,8 @@ class ChakaApiClient {
         let convertedHttpMethod = httpMethodConversion(httpMethod: requestType)
         AF.request(url, method: convertedHttpMethod, parameters: params).responseDecodable(of: DataModel.self) { response in
                 if let error = response.error {
-                    failure(error.localizedDescription)
+//                    failure(error.localizedDescription)
+                    debugPrint(error)
                     return
                 }
                 if let result = response.value {

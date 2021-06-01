@@ -17,6 +17,7 @@
 		702E4FDD26641C5D00241908 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FDC26641C5D00241908 /* DetailsPresenter.swift */; };
 		702E4FDF26641C8500241908 /* StockDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FDE26641C8500241908 /* StockDetailsModel.swift */; };
 		702E4FE1266435FB00241908 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FE0266435FB00241908 /* Constants.swift */; };
+		702E4FE42666961700241908 /* PercentageChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E4FE32666961600241908 /* PercentageChange.swift */; };
 		70B31F55266114AE008AD759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F54266114AE008AD759 /* AppDelegate.swift */; };
 		70B31F57266114AE008AD759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B31F56266114AE008AD759 /* SceneDelegate.swift */; };
 		70B31F5E266114B2008AD759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B31F5D266114B2008AD759 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		702E4FDC26641C5D00241908 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
 		702E4FDE26641C8500241908 /* StockDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsModel.swift; sourceTree = "<group>"; };
 		702E4FE0266435FB00241908 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		702E4FE32666961600241908 /* PercentageChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageChange.swift; sourceTree = "<group>"; };
 		70B31F51266114AE008AD759 /* ChakaChallege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChakaChallege.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B31F54266114AE008AD759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70B31F56266114AE008AD759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = StockList;
 			sourceTree = "<group>";
 		};
+		702E4FE22666955000241908 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				702E4FE32666961600241908 /* PercentageChange.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		70B31F48266114AE008AD759 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 		70B31F8D2663A747008AD759 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				702E4FE22666955000241908 /* Helpers */,
 				70B31F8B2663A472008AD759 /* StockListModel.swift */,
 				702E4FDE26641C8500241908 /* StockDetailsModel.swift */,
 			);
@@ -483,6 +494,7 @@
 				70B31F8C2663A473008AD759 /* StockListModel.swift in Sources */,
 				702E4FDF26641C8500241908 /* StockDetailsModel.swift in Sources */,
 				70B31F55266114AE008AD759 /* AppDelegate.swift in Sources */,
+				702E4FE42666961700241908 /* PercentageChange.swift in Sources */,
 				702E4FE1266435FB00241908 /* Constants.swift in Sources */,
 				702E4FCF2663C3FD00241908 /* ChakaApiClient.swift in Sources */,
 				702E4FD926641BEC00241908 /* DetailsWorker.swift in Sources */,

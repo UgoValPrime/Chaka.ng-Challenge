@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GetStockDetailsResponseBusinessLogic{
-    func getStockDeatailsResponseData(ticker: String)
+    func getStockDeatailsResponseData(url: String)
 }
 
 class GetStockDetailsInteractor: GetStockDetailsResponseBusinessLogic {
@@ -16,8 +16,8 @@ class GetStockDetailsInteractor: GetStockDetailsResponseBusinessLogic {
     var worker: GetStockDetailsResponse?
     var presenter: GetStockDetailsPresentationLogic?
     
-    func getStockDeatailsResponseData(ticker: String) {
-        worker?.getStockDetails(ticker: ticker, success: { [weak self] (response) in
+    func getStockDeatailsResponseData(url: String) {
+        worker?.getStockDetails(url: url, success: { [weak self] (response) in
             guard let strongSelf = self else { return }
             strongSelf.presenter?.presentResponse(prompt: response)
             

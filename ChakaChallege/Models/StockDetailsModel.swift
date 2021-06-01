@@ -9,11 +9,11 @@ import Foundation
 
 // MARK: - StockDetailsModel
 struct StockDetailsModel: Codable {
-    let status, from, symbol: String
-    let welcomeOpen: Int
-    let high, low, close: Double
-    let volume: Int
-    let afterHours, preMarket: Double
+    let status, from, symbol: String?
+    let welcomeOpen: Double?
+    let high, low, close: Double?
+    let volume: Int?
+    let afterHours, preMarket: Double?
 
     enum CodingKeys: String, CodingKey {
         case status, from, symbol
