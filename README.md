@@ -5,24 +5,24 @@ YOu would require the latest xcode version and a simulaor /phone running ios 14 
 
 ### App was built using the VIP architecture.
 
-####LIBRARIES USED
-Alamofire
-SnapKit
-Kingfisher
-SwiftCharts
+#### LIBRARIES USED
+- Alamofire
+- SnapKit
+- Kingfisher
+- SwiftCharts
 
 
 #### WHAT I DID
-found API to get stocks and basic data
-populated screen with stocks data
-implemented the infinite scroll
-Passed data to Details Screen
-Showed Percentage drop or increase in Price
+ - found API to get stocks and basic data
+ - populated screen with stocks data
+ - implemented the infinite scroll
+ - Passed data to Details Screen
+ - Showed Percentage drop or increase in Price
 
 #### WHAT I LEFT UNDONE
- could not get data to show charts as a result, chats was left on done.
- charts library has been imported and done with dummy data(just to show proficiency at using said library)
+  - could not get data to show charts as a result, chats was left on done.
+  - charts library has been imported and done with dummy data(just to show proficiency at using said library)
  
  
  #### LIMITATIONS
- Short time and unavailability of needed data(For free)
+  - Short time and unavailability of needed data(For free)
