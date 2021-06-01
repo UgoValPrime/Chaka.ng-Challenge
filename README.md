@@ -22,7 +22,9 @@ YOu would require the latest xcode version and a simulaor /phone running ios 14 
 #### WHAT I LEFT UNDONE
   - could not get data to show charts as a result, chats was left on done.
   - charts library has been imported and done with dummy data(just to show proficiency at using said library)
+  - didn't persist data to avoid blank table page.
  
  
  #### LIMITATIONS
   - Short time and unavailability of needed data(For free)
+  - 
